@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Maple — Acessórios para RPG & Card Games</title>
 <meta name="description" content="Dados, deckboxes, fichários e sleeves pra quem joga sério. Catálogo vivo, sem enrolação.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23c9a44c' d='M24 5c10 4 17 13 15 25-9 3-21 3-29-4-1-11 5-18 14-21z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -18,7 +17,7 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="index.html">
-      <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/sprite.svg#leaf"></use></svg>
+      <span class="brand__mark" aria-hidden="true">M</span>
       <span class="brand__text">
         <span class="brand__name">Maple</span>
         <span class="brand__tagline">Deck &amp; dice supply co.</span>
@@ -27,8 +26,9 @@
     <nav class="header-nav" aria-label="Navegação principal">
       <a href="#catalogo">Catálogo</a>
       <a href="como-fiz/index.html">/como-fiz</a>
-      <a class="cart-pill" href="#catalogo" aria-label="Itens no carrinho">
-        <svg aria-hidden="true"><use href="assets/icons/sprite.svg#cart"></use></svg>
+      <a class="cart-pill" href="carrinho.html" aria-label="Abrir carrinho">
+        <span class="cart-icon" aria-hidden="true"></span>
+        <span>Carrinho</span>
         <span id="cart-count">0</span>
       </a>
     </nav>
@@ -54,19 +54,19 @@
       <div class="hero__case" aria-hidden="true">
         <div class="hero__case-grid">
           <div class="hero__case-item">
-            <svg><use href="assets/icons/sprite.svg#dado"></use></svg>
+            <span class="css-icon css-icon--dice" aria-hidden="true">D20</span>
             <span>D20 dracônico</span>
           </div>
           <div class="hero__case-item">
-            <svg><use href="assets/icons/sprite.svg#deckbox"></use></svg>
+            <span class="css-icon css-icon--box" aria-hidden="true"></span>
             <span>Deckbox grimório</span>
           </div>
           <div class="hero__case-item">
-            <svg><use href="assets/icons/sprite.svg#ficharios"></use></svg>
+            <span class="css-icon css-icon--binder" aria-hidden="true"></span>
             <span>Fichário vault</span>
           </div>
           <div class="hero__case-item">
-            <svg><use href="assets/icons/sprite.svg#sleeve"></use></svg>
+            <span class="css-icon css-icon--sleeve" aria-hidden="true"></span>
             <span>Sleeve prisma</span>
           </div>
         </div>
@@ -79,7 +79,7 @@
     <div class="binder__body">
       <div class="toolbar">
         <label class="search">
-          <svg aria-hidden="true"><use href="assets/icons/sprite.svg#search"></use></svg>
+          <span class="search-icon" aria-hidden="true"></span>
           <input id="busca-input" type="search" placeholder="Buscar por nome ou descrição…" aria-label="Buscar produtos">
         </label>
         <span class="toolbar__count" id="toolbar-count"></span>

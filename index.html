@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maple — Acessórios para RPG & Card Games</title>
-<meta name="description" content="Dados, deckboxes, fichários e sleeves pra quem joga sério. Catálogo vivo, sem enrolação.">
+<title>MapleStore — Loja de Card Games e Acessórios</title>
+<meta name="description" content="MapleStore — loja de card games e acessórios. Dados, deckboxes, fichários e sleeves pra quem joga sério.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,11 +17,8 @@
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="index.html">
-      <span class="brand__mark" aria-hidden="true">M</span>
-      <span class="brand__text">
-        <span class="brand__name">Maple</span>
-        <span class="brand__tagline">Deck &amp; dice supply co.</span>
-      </span>
+      <img class="brand__logo" src="images/logo/logo-maple.png" alt="MapleStore — Loja de Card Games e Acessórios">
+      <span class="brand__tagline">Loja de Card Games e Acessórios</span>
     </a>
     <nav class="header-nav" aria-label="Navegação principal">
       <a href="#catalogo">Catálogo</a>
@@ -39,8 +36,8 @@
   <section class="hero">
     <div class="hero__inner">
       <div class="hero__copy">
-        <span class="hero__eyebrow">Loja no ar · catálogo headless</span>
-        <h1>Equipamento sério<br>pra quem <em>joga</em> sério.</h1>
+        <span class="hero__eyebrow">Bem-vindo ao nosso inventário</span>
+        <h1>Seu inventário pra <em>aventura</em><br>começa com a gente.</h1>
         <p class="lead">
           Dados, deckboxes, fichários e sleeves pensados pra mesa de RPG e
           torneio de card game. Sem produto genérico: cada peça aqui foi
@@ -75,7 +72,6 @@
   </section>
 
   <div class="binder" id="catalogo">
-    <div class="binder__tabs" id="binder-tabs" role="tablist" aria-label="Categorias"></div>
     <div class="binder__body">
       <div class="toolbar">
         <label class="search">
@@ -84,6 +80,8 @@
         </label>
         <span class="toolbar__count" id="toolbar-count"></span>
       </div>
+
+      <div class="binder__tabs" id="binder-tabs" role="tablist" aria-label="Categorias"></div>
 
       <section class="catalog">
         <div class="catalog__grid" id="catalog-grid" aria-live="polite">
@@ -96,7 +94,7 @@
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <span>Maple — projeto do Bootcamp AI/R, Trilha Commerce. Feito pra aprender deploy de verdade.</span>
+    <span>MapleStore — projeto do Bootcamp AI/R, Trilha Commerce. Feito pra aprender deploy de verdade.</span>
     <a href="como-fiz/index.html">Ver como foi construído →</a>
   </div>
 </footer>

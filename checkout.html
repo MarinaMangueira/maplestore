@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Maple</title>
+<meta name="description" content="Checkout fictício da Maple — acessórios para RPG e card games.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23c9a44c' d='M24 5c10 4 17 13 15 25-9 3-21 3-29-4-1-11 5-18 14-21-1-11 5-18 14-21z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="felt-texture" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="Voltar para a Maple">
+      <svg class="brand__mark" aria-hidden="true"><use href="assets/icons/sprite.svg#leaf"></use></svg>
+      <span class="brand__text">
+        <span class="brand__name">Maple</span>
+        <span class="brand__tagline">Deck &amp; dice supply co.</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="Navegação principal">
+      <a href="index.html#catalogo">Catálogo</a>
+      <a href="como-fiz/index.html">/como-fiz</a>
+      <a class="cart-pill" href="carrinho.html" aria-label="Carrinho">
+        <svg aria-hidden="true"><use href="assets/icons/sprite.svg#cart"></use></svg>
+        Carrinho <span id="cart-count">0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="shopping-page checkout-page">
+  <div class="shopping-page__inner">
+    <div class="shopping-heading">
+      <span class="page-eyebrow">Etapa final · compra fictícia</span>
+      <h1>Checkout</h1>
+      <p>Preencha os dados abaixo para simular a finalização do pedido.</p>
+    </div>
+
+    <div id="checkout-empty" class="empty-cart" hidden>
+      <div class="empty-cart__icon">✦</div>
+      <h2>Não há itens para finalizar</h2>
+      <p>Adicione algum produto ao carrinho antes de acessar o checkout.</p>
+      <a class="btn btn--gold" href="index.html#catalogo">Voltar ao catálogo</a>
+    </div>
+
+    <form id="checkout-form" class="checkout-layout" novalidate>
+      <section class="checkout-form-panel">
+        <div class="checkout-section">
+          <div class="section-title">
+            <span class="section-number">01</span>
+            <div><h2>Dados de contato</h2><p>Informações fictícias para o exercício.</p></div>
+          </div>
+          <div class="form-grid">
+            <label class="field field--full">Nome completo<input name="nome" type="text" autocomplete="name" placeholder="Maria da Silva (fictícia)" required></label>
+            <label class="field">E-mail<input name="email" type="email" autocomplete="email" placeholder="maria@exemplo.com" required></label>
+            <label class="field">Telefone<input name="telefone" type="tel" autocomplete="tel" placeholder="(83) 99999-9999"></label>
+          </div>
+        </div>
+
+        <div class="checkout-section">
+          <div class="section-title">
+            <span class="section-number">02</span>
+            <div><h2>Endereço de entrega</h2><p>Não existe entrega real neste projeto.</p></div>
+          </div>
+          <div class="form-grid">
+            <label class="field field--wide">Endereço<input name="endereco" type="text" autocomplete="street-address" placeholder="Rua dos Dados, 20" required></label>
+            <label class="field">Número<input name="numero" type="text" inputmode="numeric" placeholder="53" required></label>
+            <label class="field">Complemento<input name="complemento" type="text" placeholder="Apto. 2"></label>
+            <label class="field">Cidade<input name="cidade" type="text" autocomplete="address-level2" placeholder="Pombal" required></label>
+            <label class="field">UF<select name="uf" required><option value="">Selecione</option><option>AC</option><option>AL</option><option>AP</option><option>AM</option><option>BA</option><option>CE</option><option>DF</option><option>ES</option><option>GO</option><option>MA</option><option>MG</option><option>MS</option><option>MT</option><option>PA</option><option>PB</option><option>PE</option><option>PI</option><option>PR</option><option>RJ</option><option>RN</option><option>RO</option><option>RR</option><option>RS</option><option>SC</option><option>SE</option><option>SP</option><option>TO</option></select></label>
+            <label class="field">CEP<input name="cep" type="text" inputmode="numeric" autocomplete="postal-code" placeholder="58840-000" required></label>
+          </div>
+        </div>
+
+        <div class="checkout-section">
+          <div class="section-title">
+            <span class="section-number">03</span>
+            <div><h2>Pagamento</h2><p>Escolha apenas uma forma fictícia.</p></div>
+          </div>
+          <div class="payment-options">
+            <label class="payment-option"><input type="radio" name="pagamento" value="pix" checked><span><strong>PIX fictício</strong><small>Aprovação simulada</small></span></label>
+            <label class="payment-option"><input type="radio" name="pagamento" value="cartao"><span><strong>Cartão fictício</strong><small>Sem dados reais</small></span></label>
+            <label class="payment-option"><input type="radio" name="pagamento" value="boleto"><span><strong>Boleto fictício</strong><small>Somente demonstração</small></span></label>
+          </div>
+          <div class="fiction-warning">Atenção: este checkout é somente para demonstração. Não informe dados bancários, número de cartão ou informações reais.</div>
+        </div>
+      </section>
+
+      <aside class="checkout-summary" aria-labelledby="checkout-summary-title">
+        <div class="checkout-summary__top">
+          <span class="page-eyebrow">Seu pedido</span>
+          <h2 id="checkout-summary-title">Resumo</h2>
+        </div>
+        <div id="checkout-items" class="checkout-items"></div>
+        <div class="summary-line"><span>Subtotal</span><strong id="checkout-subtotal">R$ 0,00</strong></div>
+        <div class="summary-line"><span>Frete</span><strong>Grátis</strong></div>
+        <div class="summary-total"><span>Total</span><strong id="checkout-total">R$ 0,00</strong></div>
+        <button class="btn btn--gold btn--full" type="submit">Confirmar compra fictícia ✓</button>
+        <a class="summary-back" href="carrinho.html">← Voltar ao carrinho</a>
+        <p class="fiction-note">Nenhuma cobrança ou transação real acontece aqui.</p>
+      </aside>
+    </form>
+
+    <div id="checkout-success" class="success-card" hidden>
+      <span class="success-card__mark">✓</span>
+      <span class="page-eyebrow">Pedido simulado</span>
+      <h2>Compra fictícia confirmada</h2>
+      <p>O pedido foi concluído apenas para demonstrar o fluxo de uma loja estática.</p>
+      <a class="btn btn--gold" href="index.html#catalogo">Voltar para a Maple</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <span>Maple — projeto do Bootcamp AI/R, Trilha Commerce.</span>
+    <a href="como-fiz/index.html">Ver como foi construído →</a>
+  </div>
+</footer>
+
+<script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,5 +1,5 @@
 /**
- * Maple — catálogo + carrinho fictício.
+ * MapleStore — catálogo + carrinho fictício.
  * Tecnologias: HTML + CSS + JavaScript.
  * O catálogo continua vindo de data/products.json via fetch().
  */
@@ -55,7 +55,7 @@ async function carregarProdutos() {
         Não foi possível carregar o catálogo agora (${erro.message}).<br>
         Confira se <code>data/products.json</code> está no ar junto com a página.
       </div>`;
-    console.error("[Maple] Falha ao buscar products.json:", erro);
+    console.error("[MapleStore] Falha ao buscar products.json:", erro);
   }
 }
 
@@ -108,7 +108,6 @@ function cardProduto(p) {
       <div class="card__media">
         <span class="product-icon product-icon--${p.icone}" aria-hidden="true"></span>
         <img class="card__photo" src="${p.imagem}" alt="${p.nome}" loading="lazy">
-        <span class="card__rarity" data-r="${p.raridade}">${p.raridade}</span>
       </div>
       <div class="card__body">
         <span class="card__category">${p.categoriaLabel}</span>

@@ -40,7 +40,7 @@
     "preco": 35.0,
     "estoque": 6,
     "descricao": "Possui separador interno para melhor organização e comporta até 80 cartas, sendo compatível com o uso de double sleeves. ",
-    "imagem": "images/deckboxes/preta.jpg",
+    "imagem": "images/deckboxes/preto.png",
     "icone": "deckbox"
   },
   {
@@ -51,7 +51,7 @@
     "preco": 35.0,
     "estoque": 1,
     "descricao": "Possui separador interno para melhor organização e comporta até 80 cartas, sendo compatível com o uso de double sleeves. ",
-    "imagem": "images/deckboxes/roxa.jpg",
+    "imagem": "images/deckboxes/roxo.jpg",
     "icone": "deckbox"
   },
   {
@@ -95,10 +95,10 @@
     "preco": 65.0,
     "estoque": 1,
     "descricao": "Tamanho standard (91x66cm), contém 100 unidades, todas na cor framboesa. Ideal para MTG e Pokémon.",
-    "imagem": "images/sleeves/standard framboesa.jpg",
+    "imagem": "images/sleeves/standard-framboesa.png",
     "icone": "sleeve"
   },
-    {
+  {
     "id": "standard-petróleo",
     "nome": "Sleeves tamanho Standard - petróleo",
     "categoria": "sleeves",
@@ -106,10 +106,10 @@
     "preco": 65.0,
     "estoque": 2,
     "descricao": "Tamanho standard, contém 100 unidades, todas na cor azul petróleo. Ideal para MTG e Pokémon.",
-    "imagem": "images/sleeves/standard petróleo.jpg",
+    "imagem": "images/sleeves/standard-petroleo.png",
     "icone": "sleeve"
   },
-   {
+  {
     "id": "japanese-ardosia",
     "nome": "Sleeves tamanho Japanese - ardósia",
     "categoria": "sleeves",
@@ -117,10 +117,10 @@
     "preco": 45.0,
     "estoque": 8,
     "descricao": "Tamanho japanese, contém 60 unidades, todas na cor ardósia. Ideal para Yu-Gi-Oh e Vanguard.",
-    "imagem": "images/sleeves/japanese ardósia.jpg",
+    "imagem": "images/sleeves/japanese-ardosia.jpg",
     "icone": "sleeve"
   },
-    {
+  {
     "id": "japanese-preto",
     "nome": "Sleeves tamanho Japanese - preto",
     "categoria": "sleeves",
@@ -128,7 +128,7 @@
     "preco": 45.0,
     "estoque": 7,
     "descricao": "Tamanho japanese, contém 60 unidades, todas na cor preto. Ideal para Yu-Gi-Oh e Vanguard.",
-    "imagem": "images/sleeves/japanese preto.jpg",
+    "imagem": "images/sleeves/japanese-preto.jpg",
     "icone": "sleeve"
   }
 ]

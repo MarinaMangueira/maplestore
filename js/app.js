@@ -17,7 +17,7 @@ const els = {
   tabs: document.getElementById("binder-tabs"),
   busca: document.getElementById("busca-input"),
   contagem: document.getElementById("toolbar-count"),
-  cartCount: document.getElementById("cart-count"),
+  cartCount: document.querySelectorAll(".cart-count"),
 };
 
 function getCart() {
@@ -38,7 +38,7 @@ function cartQuantity() {
 
 function atualizarContadorCarrinho() {
   if (!els.cartCount) return;
-  els.cartCount.textContent = cartQuantity();
+  els.cartCount.forEach((el) => { el.textContent = cartQuantity(); });
 }
 
 async function carregarProdutos() {
@@ -164,8 +164,10 @@ function adicionarAoCarrinho(id, botao) {
   atualizarContadorCarrinho();
 
   if (els.cartCount) {
-    els.cartCount.classList.add("bump");
-    setTimeout(() => els.cartCount.classList.remove("bump"), 260);
+    els.cartCount.forEach((el) => {
+      el.classList.add("bump");
+      setTimeout(() => el.classList.remove("bump"), 260);
+    });
   }
 
   const original = botao.textContent;
